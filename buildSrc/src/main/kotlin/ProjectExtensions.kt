@@ -62,7 +62,8 @@ inline fun <reified T : BaseExtension> Project.setupBase(
       freeCompilerArgs += listOf(
         "-progressive",
         "-opt-in=kotlin.RequiresOptIn",
-        "-Xjvm-default=all"
+        "-Xjvm-default=all",
+        "-Xcontext-receivers"
       )
     }
     packagingOptions.resources.excludes += setOf(
